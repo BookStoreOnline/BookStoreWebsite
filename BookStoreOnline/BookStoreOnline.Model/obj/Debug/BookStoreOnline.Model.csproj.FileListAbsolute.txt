@@ -1,0 +1,12 @@
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Model\bin\Debug\BookStoreOnline.Model.dll.config
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Model\bin\Debug\BookStoreOnline.Model.dll
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Model\bin\Debug\BookStoreOnline.Model.pdb
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Model\bin\Debug\EntityFramework.dll
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Model\bin\Debug\EntityFramework.xml
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Model\obj\Debug\BookStoreOnline.Model.csproj.AssemblyReference.cache
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Model\obj\Debug\BookStoreOnline.Model.csproj.CoreCompileInputs.cache
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Model\obj\Debug\BookStoreOnline.Model.csproj.CopyComplete
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Model\obj\Debug\BookStoreOnline.Model.dll
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Model\obj\Debug\BookStoreOnline.Model.pdb

@@ -1,0 +1,14 @@
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Data\bin\Debug\BookStoreOnline.Data.dll.config
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Data\bin\Debug\BookStoreOnline.Data.dll
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Data\bin\Debug\BookStoreOnline.Data.pdb
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Data\bin\Debug\EntityFramework.dll
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Data\bin\Debug\EntityFramework.xml
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Data\obj\Debug\BookStoreOnline.Data.csproj.AssemblyReference.cache
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Data\obj\Debug\BookStoreOnline.Data.csproj.CoreCompileInputs.cache
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Data\obj\Debug\BookStoreOnline.Data.csproj.CopyComplete
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Data\obj\Debug\BookStoreOnline.Data.dll
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Data\obj\Debug\BookStoreOnline.Data.pdb
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Data\bin\Debug\BookStoreOnline.Common.dll
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Data\bin\Debug\BookStoreOnline.Common.pdb
