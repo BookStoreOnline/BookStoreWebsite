@@ -41,6 +41,9 @@ namespace BookStoreOnline.Model.Models
         [ForeignKey("CategoryID")]
         public virtual ProductCategory ProductCategory { get; set; }
         public virtual IEnumerable<AuthorProduct> AuthorProducts { get; set; }
+        public virtual IEnumerable<OrderDetail> OrderDetails { get; set; }
+        public virtual IEnumerable<ProductTag> ProductTags { get; set; }
+        public virtual IEnumerable<TranslatorProduct> TranslatorProducts { get; set; }
 
     }
 }

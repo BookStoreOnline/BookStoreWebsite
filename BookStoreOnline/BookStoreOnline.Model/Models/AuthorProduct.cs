@@ -11,8 +11,9 @@ namespace BookStoreOnline.Model.Models
 
         [Key]
         public int ProductID { get; set; }
-
+        [ForeignKey("AuthorID")]
         public virtual Author Author { get; set; }
+        [ForeignKey("ProductID")]
         public virtual Product Product { get; set; }
     }
 }

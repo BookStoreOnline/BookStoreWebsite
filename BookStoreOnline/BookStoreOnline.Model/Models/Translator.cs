@@ -17,5 +17,6 @@ namespace BookStoreOnline.Model.Models
         public int Id { get; set; } 
         [Required]
         public bool Status { get; set; } 
+        public virtual IEnumerable<TranslatorProduct> TranslatorProducts { get; set; }
     }
 }

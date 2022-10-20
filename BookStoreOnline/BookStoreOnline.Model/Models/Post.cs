@@ -1,4 +1,5 @@
 ﻿using BookStoreOnline.Model.Abstract;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -26,5 +27,9 @@ namespace BookStoreOnline.Model.Models
         public bool? HomeFlag { get; set; }
         public bool? HotFlag { get; set; }
         public int? ViewCount { get; set; }
+        [ForeignKey("CategoryID")]
+        public virtual PostCategory PostCategory { get; set; }
+        public virtual IEnumerable<PostTag> PostTags { get; set; }
+
     }
 }

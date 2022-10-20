@@ -13,3 +13,5 @@ D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\
 D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Service\bin\Debug\BookStoreOnline.Model.pdb
 D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Service\bin\Debug\BookStoreOnline.Model.dll.config
 D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Service\obj\Debug\BookStoreOnline.Service.csproj.CopyComplete
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Service\bin\Debug\EntityFramework.dll
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.Service\bin\Debug\EntityFramework.xml

@@ -10,5 +10,9 @@ namespace BookStoreOnline.Model.Models
         public int ProductID { get; set; }
         [Key]
         public int TagID { get; set; }
+        [ForeignKey("ProductID")]
+        public virtual Product Products { get; set; }
+        [ForeignKey("TagID")]
+        public virtual Tag Tag { get; set; }
     }
 }

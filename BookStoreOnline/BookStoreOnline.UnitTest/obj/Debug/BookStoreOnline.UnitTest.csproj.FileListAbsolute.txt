@@ -45,3 +45,5 @@ D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\
 D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.UnitTest\bin\Debug\System.Web.Razor.xml
 D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.UnitTest\bin\Debug\System.Net.Http.Formatting.xml
 D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.UnitTest\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.UnitTest\bin\Debug\EntityFramework.dll
+D:\OneDrive - Ho Chi Minh city University of Food Industry\Hufi\BookStoreOnline\BookStoreWebsite\BookStoreOnline\BookStoreOnline.UnitTest\bin\Debug\EntityFramework.xml

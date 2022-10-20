@@ -1,4 +1,6 @@
 ﻿using BookStoreOnline.Model.Abstract;
+using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -21,5 +23,6 @@ namespace BookStoreOnline.Model.Models
         [MaxLength(500)]
         public string Image { get; set; }
         public bool? HomeFlag { get; set; }
+        public virtual IEnumerable<Post> Posts { get; set; }
     }
 }
