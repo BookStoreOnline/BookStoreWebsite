@@ -15,10 +15,12 @@ namespace BookStoreOnline.Data.Infrastructure
         {
             this.dbFactory = dbFactory;
         }
+
         public BookStoreOnlineDbContext DbContext
         {
-            get { return dbContext ?? (dbContext = new BookStoreOnlineDbContext()); }
+            get { return dbContext ?? (dbContext = dbFactory.Init()); }
         }
+
         public void Commit()
         {
             DbContext.SaveChanges();
