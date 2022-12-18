@@ -65,3 +65,11 @@ D:\De tai thuc tap v3\BookStore\BookStore\bin\PagedList.dll
 D:\De tai thuc tap v3\BookStore\BookStore\bin\PagedList.Mvc.dll
 D:\De tai thuc tap v3\BookStore\BookStore\bin\PagedList.xml
 D:\De tai thuc tap v3\BookStore\BookStore\bin\PagedList.Mvc.xml
+D:\De tai thuc tap v3\BookStore\BookStore\bin\Common.dll
+D:\De tai thuc tap v3\BookStore\BookStore\bin\Common.pdb
+D:\De tai thuc tap v3\BookStore\BookStore\bin\BotDetect.dll
+D:\De tai thuc tap v3\BookStore\BookStore\bin\BotDetect.Web.Mvc.dll
+D:\De tai thuc tap v3\BookStore\BookStore\bin\System.Data.SQLite.dll
+D:\De tai thuc tap v3\BookStore\BookStore\bin\System.Data.SQLite.xml
+D:\De tai thuc tap v3\BookStore\BookStore\bin\Facebook.dll
+D:\De tai thuc tap v3\BookStore\BookStore\bin\Facebook.xml

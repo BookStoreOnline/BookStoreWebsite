@@ -23,6 +23,8 @@ namespace BookStore.Areas.Admin.Controllers
             }
             return true;
         }
+
+        [HasCredential(RoleID = "VIEW_USER")]
         public ActionResult Index(string searchString, int page = 1, int pageSize = 10)
         {
             var dao = new UserDao();
@@ -32,12 +34,15 @@ namespace BookStore.Areas.Admin.Controllers
         }
 
         [HttpGet]
+        [HasCredential(RoleID = "ADD_USER")]
         public ActionResult Create()
         {
+            SetViewBag();
             return View();
         }
 
         [HttpPost]
+        [HasCredential(RoleID = "ADD_USER")]
         public ActionResult Create(User user)
         {
             if (ModelState.IsValid)
@@ -60,17 +65,22 @@ namespace BookStore.Areas.Admin.Controllers
                     }
                 }
             }
+            SetViewBag();
             return View(user);
         }
 
         [HttpGet]
+        [HasCredential(RoleID = "EDIT_USER")]
         public ActionResult Edit(int id)
         {
-            var user = new UserDao().ViewDetail(id);
+            var dao = new UserDao();
+            var user = dao.GetById(id);
+            SetViewBag(user.GroupID);
             return View(user);
         }
 
         [HttpPost]
+        [HasCredential(RoleID = "EDIT_USER")]
         public ActionResult Edit(User user)
         {
             if (ModelState.IsValid)
@@ -91,9 +101,11 @@ namespace BookStore.Areas.Admin.Controllers
                     ModelState.AddModelError("", "Cập nhật người dùng thành công");
                 }
             }
+            SetViewBag(user.GroupID);
             return View(user);
         }
 
+        [HasCredential(RoleID = "DELETE_USER")]
         public ActionResult Delete(int id)
         {
             new UserDao().Delete(id);
@@ -101,6 +113,7 @@ namespace BookStore.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [HasCredential(RoleID = "EDIT_USER")]
         public JsonResult ChangeStatus(int id)
         {
             var result = new UserDao().ChangeStatus(id);
@@ -108,6 +121,18 @@ namespace BookStore.Areas.Admin.Controllers
             {
                 status = result
             });
+        }
+
+        public void SetViewBag(string selectedId = null)
+        {
+            var userGroupDao = new UserGroupDao();
+            ViewBag.GroupID = new SelectList(userGroupDao.ListAll(), "ID", "Name", selectedId);
+        }
+
+        public ActionResult Logout()
+        {
+            Session[CommonConstants.USER_SESSION] = null;
+            return Redirect("/Admin/Login");
         }
     }
 }

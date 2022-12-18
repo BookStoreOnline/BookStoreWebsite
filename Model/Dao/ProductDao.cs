@@ -1,4 +1,5 @@
 ﻿using Model.EF;
+using Model.ViewModel;
 using PagedList;
 using System;
 using System.Collections.Generic;
@@ -112,6 +113,39 @@ namespace Model.Dao
             {
                 return false;
             }
+        }
+
+        public List<string> ListName(string keyword)
+        {
+            return db.Product.Where(x => x.Name.Contains(keyword)).Select(x => x.Name).ToList();
+        }
+
+        public List<ProductViewModel> Search(string keyword, ref int totalRecord, int pageIndex = 1, int pageSize = 2)
+        {
+            totalRecord = db.Product.Where(x => x.Name == keyword).Count();
+            var model = (from a in db.Product
+                         join b in db.Category
+                         on a.CategoryID equals b.ID
+                         where a.Name.Contains(keyword)
+                         select new
+                         {
+                             CateName = b.Name,
+                             CreatedDate = a.CreatedDate,
+                             ID = a.ID,
+                             Images = a.Image,
+                             Name = a.Name,
+                             Price = a.Price
+                         }).AsEnumerable().Select(x => new ProductViewModel()
+                         {
+                             CateName = x.Name,
+                             CreatedDate = x.CreatedDate,
+                             ID = x.ID,
+                             Images = x.Images,
+                             Name = x.Name,
+                             Price = x.Price
+                         });
+            model.OrderByDescending(x => x.CreatedDate).Skip((pageIndex - 1) * pageSize).Take(pageSize);
+            return model.ToList();
         }
     }
 }

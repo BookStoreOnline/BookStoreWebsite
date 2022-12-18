@@ -14,8 +14,6 @@ namespace Model.EF
         {
             Category = new HashSet<Category>();
             Category1 = new HashSet<Category>();
-            User1 = new HashSet<User>();
-            User11 = new HashSet<User>();
         }
 
         public int ID { get; set; }
@@ -27,6 +25,9 @@ namespace Model.EF
         [Required]
         [StringLength(50)]
         public string Password { get; set; }
+
+        [StringLength(20)]
+        public string GroupID { get; set; }
 
         [StringLength(50)]
         public string Name { get; set; }
@@ -56,14 +57,6 @@ namespace Model.EF
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Category> Category1 { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<User> User1 { get; set; }
-
-        public virtual User User2 { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<User> User11 { get; set; }
-
-        public virtual User User3 { get; set; }
+        public virtual UserGroup UserGroup { get; set; }
     }
 }

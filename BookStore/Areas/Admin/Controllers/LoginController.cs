@@ -22,31 +22,39 @@ namespace BookStore.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 var dao = new UserDao();
-                var result = dao.Login(model.UserName, Encryptor.MD5Hash(model.Password));
+                var result = dao.Login(model.UserName, Encryptor.MD5Hash(model.Password), true);
                 if (result == 1)
                 {
-                    var user = dao.GetById(model.UserName);
+                    var user = dao.GetByUserName(model.UserName);
                     var userSession = new UserLogin();
                     userSession.UserName = user.UserName;
                     userSession.UserID = user.ID;
-                    Session.Add(Common.CommonConstants.USER_SESSION, userSession);
+                    userSession.GroupID = user.GroupID;
+                    var listCredentials = dao.GetListCredential(model.UserName);
+
+                    Session.Add(CommonConstants.SESSION_CREDENTIALS, listCredentials);
+                    Session.Add(CommonConstants.USER_SESSION, userSession);
                     return RedirectToAction("Index", "Home");
                 }
                 else if (result == 0)
                 {
-                    ModelState.AddModelError("", "Tài khoản không tồn tại");
+                    ModelState.AddModelError("", "Tài khoản không tồn tại.");
                 }
                 else if (result == -1)
                 {
-                    ModelState.AddModelError("", "Tài khoản đang bị khóa");
+                    ModelState.AddModelError("", "Tài khoản đang bị khoá.");
                 }
                 else if (result == -2)
                 {
-                    ModelState.AddModelError("", "Mật khẩu không đúng");
+                    ModelState.AddModelError("", "Mật khẩu không đúng.");
+                }
+                else if (result == -3)
+                {
+                    ModelState.AddModelError("", "Tài khoản của bạn không có quyền đăng nhập.");
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Sai thông tin đăng nhập");
+                    ModelState.AddModelError("", "đăng nhập không đúng.");
                 }
             }
             return View("Index");

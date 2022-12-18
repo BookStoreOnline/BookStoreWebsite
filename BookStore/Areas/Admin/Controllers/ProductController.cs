@@ -1,4 +1,5 @@
-﻿using Model.Dao;
+﻿using BookStore.Common;
+using Model.Dao;
 using Model.EF;
 using System;
 using System.Collections.Generic;
@@ -44,6 +45,36 @@ namespace BookStore.Areas.Admin.Controllers
             }
             SetViewBag();
             return View();
+        }
+
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            var dao = new ProductDao();
+            var product = dao.GetById(id);
+            SetViewBag(product.CategoryID);
+            return View(product);
+        }
+
+        [HttpPost, ValidateInput(false)]
+        public ActionResult Edit(Product product)
+        {
+            if (ModelState.IsValid)
+            {
+                var dao = new ProductDao();
+
+                var result = dao.Update(product);
+                if (result)
+                {
+                    return RedirectToAction("Index", "User");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Cập nhật sản phẩm thành công");
+                }
+            }
+            SetViewBag(product.CategoryID);
+            return View(product);
         }
 
         public void SetViewBag(int? selectedId = null)

@@ -1,0 +1,6 @@
+D:\De tai thuc tap v3\BookStore\Common\bin\Debug\Common.dll
+D:\De tai thuc tap v3\BookStore\Common\bin\Debug\Common.pdb
+D:\De tai thuc tap v3\BookStore\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+D:\De tai thuc tap v3\BookStore\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\De tai thuc tap v3\BookStore\Common\obj\Debug\Common.dll
+D:\De tai thuc tap v3\BookStore\Common\obj\Debug\Common.pdb
