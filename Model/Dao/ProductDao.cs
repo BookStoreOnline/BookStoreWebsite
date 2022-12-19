@@ -23,6 +23,13 @@ namespace Model.Dao
             return db.Product.OrderByDescending(x => x.CreatedDate).Take(top).ToList();
         }
 
+        public List<Product> ListAllProduct(ref int totalRecord, int page, int pageSize)
+        {
+            totalRecord = db.Product.Count();
+            var model = db.Product.OrderByDescending(x => x.CreatedDate).Skip((page - 1) * pageSize).Take(pageSize).ToList();
+            return model;
+        }
+
         public List<Product> ListRelatedProduct(int productId)
         {
             var product = db.Product.Find(productId);
